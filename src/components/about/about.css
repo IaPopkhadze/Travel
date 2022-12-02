@@ -1,0 +1,144 @@
+.aboutContainer {
+  width: 100%;
+  /* height: 150vh; */
+  height: fit-content;
+}
+.aboutContent {
+  width: 70%;
+  height: fit-content;
+  margin: 3rem auto;
+  text-align: center;
+}
+.aboutH1 {
+  font-family: var(--font-family-one);
+  border-bottom: 2px solid var(--color-one);
+  width: fit-content;
+  margin: auto;
+  color: var(--color-one);
+  letter-spacing: 1rem;
+}
+.aboutP1 {
+  font-family: var(--font-family-one);
+  color: var(--color-one);
+  margin-top: 2rem;
+}
+.boxes {
+  display: grid;
+  width: 70%;
+  margin: auto;
+  height: fit-content;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box-child {
+  border: 2px solid black;
+  height: 300px;
+  position: relative;
+}
+.overlayBoxChild {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+.box-child:hover .overlayBoxChild {
+  width: 100%;
+}
+.overlayBoxChild h1 {
+  color: var(--color-two);
+  text-shadow: 2px 1px 1px white;
+  padding: 10px 20px;
+}
+/* second box */
+.box-child-two {
+  background-color: var(--color-one);
+}
+
+.box-items {
+  padding: 1rem;
+
+}
+.box-items li {
+  font-size: 1.6rem;
+}
+.box-items li:hover {
+  font-family: var(--font-family-one);
+  color: var(--color-two);
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
+
+.box-images{
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.box-images img{
+  width: 40%;
+  height: 40%;
+  border-radius: 10%;
+  border: 5px solid var(--color-two);
+margin: 0.3rem;
+
+
+}
+.imghover:hover{
+  transition: 0.5s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 10px black;
+  cursor: pointer;
+}
+.second-box{
+  text-align: center;
+}
+.second-box h1 {
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 670px) {
+  .boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.lineContainer{
+  width: 100%;
+  height:  fit-content;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ margin-top: 5rem;
+ gap: 2rem;
+
+}
+
+
+.line1{
+  width: 95%;
+  height: 0.2rem;
+  background: linear-gradient(to right,var(--color-one), white);
+}
+.line2{
+
+  width: 95%;
+  height: 0.2rem;
+background: linear-gradient(to right, white,var(--color-one));
+}

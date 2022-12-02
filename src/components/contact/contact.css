@@ -1,0 +1,130 @@
+#contact {
+  margin-top: 10rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.contactContainer {
+  padding: 1rem;
+  width: 90%;
+  height: fit-content;
+  border-radius: 0.5rem;
+  background-color: rgba(28, 81, 76, 0.2);
+  display: flex;
+}
+.contactContainer1 {
+  width: 50%;
+  height: fit-content;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  align-items: center;
+}
+/* droebit */
+
+.contactContainerChild {
+  background-color: rgba(28, 81, 76, 0.4);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  height: fit-content;
+  margin: 0.5rem;
+}
+.contactContainerChild:hover {
+  background-color: rgba(28, 81, 76, 0);
+  box-shadow: 2px 1px 10px var(--color-three);
+  cursor: pointer;
+  color: rgba(28, 81, 76, 1);
+}
+.contactContainerChild h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+}
+.contactContainerChild h1,
+p {
+  margin-top: 0.5rem;
+}
+
+.contact-icon {
+  font-size: 3rem;
+}
+
+.contactContainer2 {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.contactContainer2 input,
+textarea, button
+ {
+  width: 60%;
+  background-color: rgba(28, 81, 76, 0.4);
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--color-three);
+  font-size: 1.2rem;
+  font-family: var(--font-family-one);
+}
+.contactContainer2 button {
+  width: 200px;
+  height: fit-content;
+  border-radius: 10rem;
+}
+.contactContainer2 textarea {
+  max-height: 150px;
+  max-width: 400px;
+}
+.contactContainer2 button:hover {
+  background: linear-gradient(
+    to right,
+    rgba(28, 81, 76, 0.8),
+    rgba(28, 81, 76, 0.3),
+    rgba(28, 81, 76, 0.8)
+  );
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
+}
+@media (max-width: 960px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactContainer2 input,
+  textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 915px) {
+  .contactContainerChild h1 {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+@media (max-width: 800px) {
+  .contactContainerChild h1,
+  p,
+  .contact-icon {
+    font-size: 0.5rem;
+    margin: 0;
+  }
+  .contactContainer2 textarea {
+    max-height: 20%;
+    max-width: 110%;
+  }
+  .contactContainer1 {
+    justify-content: center;
+  }
+}
+@media (max-width: 667px) {
+  .button {
+    width: 60%;
+  }
+}

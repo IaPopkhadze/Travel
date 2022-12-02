@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+:root {
+  --color-one: #46706b;
+  --color-two: #78b3ac;
+  --color-three: #2a413e;
+  --font-family-one: "Permanent Marker", cursive;
+  --font-family-two: "Indie Flower", cursive;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+body {
+  scroll-behavior: smooth;
+}
